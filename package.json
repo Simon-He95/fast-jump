@@ -1,0 +1,150 @@
+{
+  "publisher": "simonhe",
+  "name": "fast-jump",
+  "displayName": "fast jump",
+  "version": "0.0.32",
+  "packageManager": "pnpm@8.10.5",
+  "description": "fast jump",
+  "author": "Simon He <https://github.com/Simon-He95>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/Simon-He95",
+  "homepage": "https://github.com/Simon-He95/fast-jump/blob/main/README_zh.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Simon-He95/fast-jump"
+  },
+  "bugs": {
+    "url": "https://github.com/Simon-He95/fast-jump/issues"
+  },
+  "sponsor": {
+    "url": "https://github.com/Simon-He95/sponsor"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/index.js",
+  "icon": "icon.png",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "vscode": "^1.84.2"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "fast-jump",
+          "title": "fast-jump",
+          "icon": "icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "fast-jump": [
+        {
+          "id": "fast-jump.id",
+          "name": "fast-jump"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "fast jump",
+      "properties": {
+        "fast-jump.click": {
+          "type": "boolean",
+          "default": false,
+          "description": "Controls whether mouse clicks are required to enter files"
+        },
+        "fast-jump.code": {
+          "type": "string",
+          "default": "",
+          "description": "activation code"
+        },
+        "fast-jump.deepType": {
+          "type": "boolean",
+          "default": false,
+          "description": "control whether hover type to open deepType file"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "fast-jump.click",
+        "title": "fast-jump click ☑️"
+      },
+      {
+        "command": "fast-jump.noclick",
+        "title": "fast-jump no click ✖️"
+      },
+      {
+        "command": "fast-jump.activation",
+        "title": "activation fast-jump"
+      },
+      {
+        "command": "fast-jump.toggle",
+        "title": "toggle deepType status"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "fast-jump.enter",
+        "key": "cmd+e",
+        "when": "isMac"
+      },
+      {
+        "command": "fast-jump.enter",
+        "key": "ctrl+e",
+        "when": "!isMac"
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm build --watch",
+    "test": "vitest",
+    "build": "tsup src/index.ts --external vscode",
+    "pack": "vsce package --no-dependencies",
+    "lint": "eslint . --cache",
+    "lint:fix": "eslint . --fix",
+    "publish": "vsce publish --no-dependencies",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp && pnpm run publish"
+  },
+  "devDependencies": {
+    "@simon_he/eslint-config": "^0.0.6",
+    "@types/node": "^18.18.12",
+    "@types/vscode": "^1.84.2",
+    "@typescript-eslint/types": "^6.15.0",
+    "@typescript-eslint/typescript-estree": "^6.15.0",
+    "@vscode-use/treeprovider": "^0.0.4",
+    "@vscode-use/utils": "^0.0.74",
+    "axios": "^1.6.2",
+    "bumpp": "^9.2.0",
+    "chokidar": "^3.5.3",
+    "eslint": "^8.54.0",
+    "esno": "^0.16.3",
+    "find-up": "^7.0.0",
+    "lazy-js-utils": "^0.0.78",
+    "node-machine-id": "^1.1.12",
+    "pnpm": "^8.10.5",
+    "prettier": "^3.1.1",
+    "prettier-eslint": "^16.2.0",
+    "rimraf": "^4.4.1",
+    "temp": "^0.9.4",
+    "tsup": "^6.7.0",
+    "typescript": "^5.3.2",
+    "vite": "^4.5.0",
+    "vitest": "^0.29.8",
+    "vsce": "^2.15.0"
+  },
+  "vscode": {
+    "resources": [
+      "README_zh.md",
+      "README.md"
+    ]
+  }
+}
