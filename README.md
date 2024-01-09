@@ -12,6 +12,8 @@
 
 4. Summary: Reduce the steps to reach the desired path
 
+5. Provide a display of the deep type in the ts file
+
 ## Before use
 ![img](/assets/1.jpg)
 

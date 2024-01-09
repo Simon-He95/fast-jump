@@ -69,6 +69,11 @@
           "type": "boolean",
           "default": false,
           "description": "control whether hover type to open deepType file"
+        },
+        "fast-jump.moduleType": {
+          "type": "boolean",
+          "default": false,
+          "description": "Controls whether to read types in node_modules"
         }
       }
     },
@@ -121,7 +126,7 @@
     "@typescript-eslint/types": "^6.15.0",
     "@typescript-eslint/typescript-estree": "^6.15.0",
     "@vscode-use/treeprovider": "^0.0.4",
-    "@vscode-use/utils": "^0.0.74",
+    "@vscode-use/utils": "^0.0.78",
     "axios": "^1.6.2",
     "bumpp": "^9.2.0",
     "chokidar": "^3.5.3",
