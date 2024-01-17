@@ -24,8 +24,8 @@ importers:
         specifier: ^6.15.0
         version: 6.15.0(typescript@5.3.2)
       '@vscode-use/treeprovider':
-        specifier: ^0.0.4
-        version: 0.0.4
+        specifier: ^0.0.5
+        version: 0.0.5
       '@vscode-use/utils':
         specifier: ^0.0.78
         version: 0.0.78
@@ -50,6 +50,9 @@ importers:
       lazy-js-utils:
         specifier: ^0.0.78
         version: 0.0.78(vue@3.3.9)
+      lazy-parser:
+        specifier: ^0.0.5
+        version: 0.0.5
       node-machine-id:
         specifier: ^1.1.12
         version: 1.1.12
@@ -127,8 +130,8 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@babel/parser@7.23.4:
-    resolution: {integrity: sha512-vf3Xna6UEprW+7t6EtOmFpHNAuxw3xqPZghy+brsnusscJRW5BMUzzHZc5ICjULee81WeUV2jjakG09MDglJXQ==}
+  /@babel/parser@7.23.6:
+    resolution: {integrity: sha512-Z2uID7YJ7oNvAI20O9X0bblw7Qqs8Q2hFy0R9tAfnfLkp5MW0UH9eUvnDSnFwKZ0AvgS1ucqR4KzvVHgnke1VQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
     dependencies:
@@ -1012,8 +1015,8 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@vscode-use/treeprovider@0.0.4:
-    resolution: {integrity: sha512-Cy2hw5Opj9ql52jAtj5PW69wAdSL8CrlXeneTcxlNbfFQdcm5r1vVN0R6n2gBHKodwwBZFyZmNfeicca8Fx07A==}
+  /@vscode-use/treeprovider@0.0.5:
+    resolution: {integrity: sha512-xbtZa4aEhm8xA7FQu1TOMtCubv2hrUGy1LVYoHpwSjIjtQjMonEQX191bUi4ooYnuh6zduBWlrMwy1M3nU+ThQ==}
     engines: {vscode: ^1.77.0}
     dev: true
 
@@ -1025,7 +1028,7 @@ packages:
   /@vue/compiler-core@3.3.9:
     resolution: {integrity: sha512-+/Lf68Vr/nFBA6ol4xOtJrW+BQWv3QWKfRwGSm70jtXwfhZNF4R/eRgyVJYoxFRhdCTk/F6g99BP0ffPgZihfQ==}
     dependencies:
-      '@babel/parser': 7.23.4
+      '@babel/parser': 7.23.6
       '@vue/shared': 3.3.9
       estree-walker: 2.0.2
       source-map-js: 1.0.2
@@ -1041,7 +1044,7 @@ packages:
   /@vue/compiler-sfc@3.3.9:
     resolution: {integrity: sha512-wy0CNc8z4ihoDzjASCOCsQuzW0A/HP27+0MDSSICMjVIFzk/rFViezkR3dzH+miS2NDEz8ywMdbjO5ylhOLI2A==}
     dependencies:
-      '@babel/parser': 7.23.4
+      '@babel/parser': 7.23.6
       '@vue/compiler-core': 3.3.9
       '@vue/compiler-dom': 3.3.9
       '@vue/compiler-ssr': 3.3.9
@@ -1049,7 +1052,7 @@ packages:
       '@vue/shared': 3.3.9
       estree-walker: 2.0.2
       magic-string: 0.30.5
-      postcss: 8.4.31
+      postcss: 8.4.33
       source-map-js: 1.0.2
     dev: true
 
@@ -1063,7 +1066,7 @@ packages:
   /@vue/reactivity-transform@3.3.9:
     resolution: {integrity: sha512-HnUFm7Ry6dFa4Lp63DAxTixUp8opMtQr6RxQCpDI1vlh12rkGIeYqMvJtK+IKyEfEOa2I9oCkD1mmsPdaGpdVg==}
     dependencies:
-      '@babel/parser': 7.23.4
+      '@babel/parser': 7.23.6
       '@vue/compiler-core': 3.3.9
       '@vue/shared': 3.3.9
       estree-walker: 2.0.2
@@ -3436,6 +3439,10 @@ packages:
       vue: 3.3.9(typescript@5.3.2)
     dev: true
 
+  /lazy-parser@0.0.5:
+    resolution: {integrity: sha512-x737bNVDkANrOrPKRVh/mbFc7MEzmKyP+eky8bIPR2K3G9daSQW67OPHJySn7GQHQxdImb1kz17hxsas0PTEaQ==}
+    dev: true
+
   /leven@3.1.0:
     resolution: {integrity: sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==}
     engines: {node: '>=6'}
@@ -4114,6 +4121,15 @@ packages:
 
   /postcss@8.4.31:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.7
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+    dev: true
+
+  /postcss@8.4.33:
+    resolution: {integrity: sha512-Kkpbhhdjw2qQs2O2DGX+8m5OVqEcbB9HRBvuYM9pgrjEFUg30A9LmXNlTAUj4S9kgtGyrMbTzVjH7E+s5Re2yg==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.7

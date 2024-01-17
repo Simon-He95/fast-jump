@@ -21,7 +21,7 @@
 ![img](/assets/2.jpg)
 
 ## 使用后
-![!img](/assets//3.jpg)
+![!img](/assets/3.jpg)
 
 ![demo](/assets/demo.gif)
 
