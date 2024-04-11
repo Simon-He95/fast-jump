@@ -117,7 +117,7 @@
     "lint:fix": "eslint . --fix",
     "publish": "vsce publish --no-dependencies",
     "typecheck": "tsc --noEmit",
-    "release": "bumpp && pnpm run publish"
+    "release": "pnpm run build && bumpp && pnpm run publish"
   },
   "devDependencies": {
     "@simon_he/eslint-config": "^0.0.6",
