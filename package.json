@@ -2,7 +2,7 @@
   "publisher": "simonhe",
   "name": "fast-jump",
   "displayName": "fast jump",
-  "version": "0.0.59",
+  "version": "0.0.60",
   "packageManager": "pnpm@8.10.5",
   "description": "fast jump",
   "author": "Simon He <https://github.com/Simon-He95>",
