@@ -31,7 +31,7 @@
     "vscode": "^1.84.2"
   },
   "activationEvents": [
-    "onStartupFinished"
+    "onView:fast-jump"
   ],
   "contributes": {
     "viewsContainers": {
@@ -74,6 +74,11 @@
           "type": "boolean",
           "default": false,
           "description": "Controls whether to read types in node_modules"
+        },
+        "fast-jump.showViews": {
+          "type": "boolean",
+          "default": true,
+          "description": "Controls whether to show the view in the activity bar"
         }
       }
     },
