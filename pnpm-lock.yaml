@@ -51,8 +51,8 @@ importers:
         specifier: ^0.0.78
         version: 0.0.78(vue@3.3.9)
       lazy-parser:
-        specifier: ^0.0.10
-        version: 0.0.10
+        specifier: ^0.0.11
+        version: 0.0.11
       node-machine-id:
         specifier: ^1.1.12
         version: 1.1.12
@@ -3439,8 +3439,8 @@ packages:
       vue: 3.3.9(typescript@5.3.2)
     dev: true
 
-  /lazy-parser@0.0.10:
-    resolution: {integrity: sha512-xfSYgEiZcqoAT/L5v0J+f2sYIf7fAfdPskpuqtbYKXHAALym4/iiuhzTMw1v265CB5ZEx45kpMtPD9ZN5MHREg==}
+  /lazy-parser@0.0.11:
+    resolution: {integrity: sha512-V9BPYeW2jnb69GW+xK52GAQXV+v1EhMdnGYiEbZz3iyfbVBwbIG2et6XzdpVZvKBgHHaigsBlZSSKhlOb5YKtA==}
     dev: true
 
   /leven@3.1.0:
