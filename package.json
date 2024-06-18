@@ -139,7 +139,7 @@
     "esno": "^0.16.3",
     "find-up": "^7.0.0",
     "lazy-js-utils": "^0.0.78",
-    "lazy-parser": "^0.0.11",
+    "lazy-parser": "^0.0.12",
     "node-machine-id": "^1.1.12",
     "pnpm": "^8.10.5",
     "prettier": "^3.1.1",
