@@ -48,11 +48,11 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0
       lazy-js-utils:
-        specifier: ^0.0.78
-        version: 0.0.78(vue@3.3.9)
+        specifier: ^0.0.93
+        version: 0.0.93(vue@3.3.9)
       lazy-parser:
-        specifier: ^0.0.13
-        version: 0.0.13
+        specifier: ^0.0.14
+        version: 0.0.14
       node-machine-id:
         specifier: ^1.1.12
         version: 1.1.12
@@ -3419,28 +3419,19 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /lazy-js-utils@0.0.37(vue@3.3.9):
-    resolution: {integrity: sha512-kr6ehqgZmUDkBFUdFaOby43wZ/fdUODJVDRY4v0ZlGoTKTXZ/huea8Mu9LA2ThSt11URObpE+DMWS+IHBtKW2w==}
-    peerDependencies:
-      vue: ^3.2.41
-    dependencies:
-      vue: 3.3.9(typescript@5.3.2)
-    dev: true
-
-  /lazy-js-utils@0.0.78(vue@3.3.9):
-    resolution: {integrity: sha512-YbaZkG3u2cU2ZNLR9lvnpic94kIBWno31EVJG2N/S83+yiJ0R0Y2bDrUhtyoRPI8a1Y19ebZ19Vn/6ynAUWK7w==}
+  /lazy-js-utils@0.0.93(vue@3.3.9):
+    resolution: {integrity: sha512-ebYYje2Heg+cncvGe2Ehv/knIYkLdeDgSF24RuJqiWgDMb3ajmP8K/4e0lA0OuunSaiGDfMiTSpeMI/yck6pbQ==}
     peerDependencies:
       vue: ^3.2.41
     dependencies:
       htmlparser2: 8.0.2
-      lazy-js-utils: 0.0.37(vue@3.3.9)
       qrcode: 1.5.3
       spark-md5: 3.0.2
       vue: 3.3.9(typescript@5.3.2)
     dev: true
 
-  /lazy-parser@0.0.13:
-    resolution: {integrity: sha512-NpowLjVFDGL/QiLMiQG7A/3TZD/mdhfJRgPA6uKJQfkKTgpvGqFVTKcTRjAPx3iNJCNeqqFKOK2q0m39+LcM9w==}
+  /lazy-parser@0.0.14:
+    resolution: {integrity: sha512-+brZvHC+vijhx5mQx3AUuQJRizRhGLHUbJ9v06nphtvVPna2GP8DhVNBq0CbtGPHw0MShiU7D0EiabyY0xd2Qw==}
     dev: true
 
   /leven@3.1.0:
