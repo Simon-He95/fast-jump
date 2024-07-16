@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      fast-glob:
-        specifier: ^3.3.2
-        version: 3.3.2
     devDependencies:
       '@simon_he/eslint-config':
         specifier: ^0.0.6
@@ -31,8 +27,8 @@ importers:
         specifier: ^0.0.5
         version: 0.0.5
       '@vscode-use/utils':
-        specifier: ^0.0.78
-        version: 0.0.78
+        specifier: 0.1.10-beta.1
+        version: 0.1.10-beta.1
       axios:
         specifier: ^1.6.2
         version: 1.6.2
@@ -48,6 +44,9 @@ importers:
       esno:
         specifier: ^0.16.3
         version: 0.16.3
+      fast-glob:
+        specifier: ^3.3.2
+        version: 3.3.2
       find-up:
         specifier: ^7.0.0
         version: 7.0.0
@@ -606,8 +605,8 @@ packages:
     resolution: {integrity: sha512-xbtZa4aEhm8xA7FQu1TOMtCubv2hrUGy1LVYoHpwSjIjtQjMonEQX191bUi4ooYnuh6zduBWlrMwy1M3nU+ThQ==}
     engines: {vscode: ^1.77.0}
 
-  '@vscode-use/utils@0.0.78':
-    resolution: {integrity: sha512-cMIXSlBUAxooobb2R8c7klvq5mJ3q1dErr/9WawOBu+XuSlTp3hWfanZiaNkLmJwrJqaBtOiC+9ePsDkIurrPQ==}
+  '@vscode-use/utils@0.1.10-beta.1':
+    resolution: {integrity: sha512-YCiwzn6rTeouYRwp0gkCTfbh1H2B62bwp7Aym36JmwzuCA2caPpLU5owIWPHuC5BQ9HQaDAJy+EoIY35UNImiw==}
     engines: {vscode: ^1.77.0}
 
   '@vue/compiler-core@3.3.9':
@@ -3467,7 +3466,7 @@ snapshots:
 
   '@vscode-use/treeprovider@0.0.5': {}
 
-  '@vscode-use/utils@0.0.78': {}
+  '@vscode-use/utils@0.1.10-beta.1': {}
 
   '@vue/compiler-core@3.3.9':
     dependencies:

@@ -124,9 +124,6 @@
     "typecheck": "tsc --noEmit",
     "release": "pnpm run build && bumpp && pnpm run publish"
   },
-  "dependencies": {
-    "fast-glob": "^3.3.2"
-  },
   "devDependencies": {
     "@simon_he/eslint-config": "^0.0.6",
     "@types/node": "^18.18.12",
@@ -134,12 +131,13 @@
     "@typescript-eslint/types": "^6.15.0",
     "@typescript-eslint/typescript-estree": "^6.15.0",
     "@vscode-use/treeprovider": "^0.0.5",
-    "@vscode-use/utils": "^0.0.78",
+    "@vscode-use/utils": "0.1.10-beta.1",
     "axios": "^1.6.2",
     "bumpp": "^9.2.0",
     "chokidar": "^3.5.3",
     "eslint": "^8.54.0",
     "esno": "^0.16.3",
+    "fast-glob": "^3.3.2",
     "find-up": "^7.0.0",
     "lazy-js-utils": "^0.0.93",
     "lazy-parser": "^0.0.14",
