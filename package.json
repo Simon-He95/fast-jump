@@ -124,6 +124,9 @@
     "typecheck": "tsc --noEmit",
     "release": "pnpm run build && bumpp && pnpm run publish"
   },
+  "dependencies": {
+    "fast-glob": "^3.3.2"
+  },
   "devDependencies": {
     "@simon_he/eslint-config": "^0.0.6",
     "@types/node": "^18.18.12",
