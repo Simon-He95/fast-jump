@@ -54,8 +54,8 @@ importers:
         specifier: ^0.0.93
         version: 0.0.93(vue@3.3.9(typescript@5.3.2))
       lazy-parser:
-        specifier: ^0.0.14
-        version: 0.0.14
+        specifier: ^0.0.15
+        version: 0.0.15
       node-machine-id:
         specifier: ^1.1.12
         version: 1.1.12
@@ -1885,8 +1885,8 @@ packages:
     peerDependencies:
       vue: ^3.2.41
 
-  lazy-parser@0.0.14:
-    resolution: {integrity: sha512-+brZvHC+vijhx5mQx3AUuQJRizRhGLHUbJ9v06nphtvVPna2GP8DhVNBq0CbtGPHw0MShiU7D0EiabyY0xd2Qw==}
+  lazy-parser@0.0.15:
+    resolution: {integrity: sha512-akg2IaNVfjs7JhZMXQtuy4QhzzSQEzOinLAf+fG+AlQ9W9aFd9lcAhF/5/jTxrEG7jSdzCq+/9TAjISzLLVuJA==}
 
   leven@3.1.0:
     resolution: {integrity: sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==}
@@ -4882,7 +4882,7 @@ snapshots:
       spark-md5: 3.0.2
       vue: 3.3.9(typescript@5.3.2)
 
-  lazy-parser@0.0.14: {}
+  lazy-parser@0.0.15: {}
 
   leven@3.1.0: {}
 
