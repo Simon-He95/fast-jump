@@ -26,7 +26,7 @@
 
 ## ✅ How to use it
 
-- Click on any variable and then use the shortcut key `mac? cmd+e : ctrl+e`
+- Click on any variable and then use the shortcut key `mac ? cmd+e : ctrl+e`
 
 ## 🎡 Features
 
